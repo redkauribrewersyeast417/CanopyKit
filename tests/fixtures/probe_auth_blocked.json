@@ -1,0 +1,13 @@
+{
+  "scenario": "auth_blocked_agent_scoped",
+  "description": "Agent-scoped endpoint returns 401. Authorization failure; feed source remains unknown. Operator must fix auth before rollout.",
+  "probe_result": {
+    "endpoint": "/api/v1/agents/me/events",
+    "status_code": 401,
+    "error_class": "http_401",
+    "active_feed_source": "unknown",
+    "fallback_reason": "agent_probe_failed"
+  },
+  "feed_source": "unknown",
+  "validation_status": "failed"
+}

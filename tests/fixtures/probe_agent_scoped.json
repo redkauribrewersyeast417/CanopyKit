@@ -1,0 +1,13 @@
+{
+  "scenario": "agent_scoped_feed_available",
+  "description": "Agent-scoped /api/v1/agents/me/events endpoint returns 200. No fallback required.",
+  "probe_result": {
+    "endpoint": "/api/v1/agents/me/events",
+    "status_code": 200,
+    "error_class": "",
+    "active_feed_source": "agent_scoped",
+    "fallback_reason": ""
+  },
+  "feed_source": "agent_scoped",
+  "validation_status": "full_pass"
+}

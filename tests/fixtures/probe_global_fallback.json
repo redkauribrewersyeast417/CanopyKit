@@ -1,0 +1,13 @@
+{
+  "scenario": "compatibility_fallback_to_global",
+  "description": "Agent-scoped endpoint returns 404. Compatibility fallback to /api/v1/events succeeds (200).",
+  "probe_result": {
+    "endpoint": "/api/v1/events",
+    "status_code": 200,
+    "error_class": "",
+    "active_feed_source": "global",
+    "fallback_reason": "agent_endpoint_not_available"
+  },
+  "feed_source": "global",
+  "validation_status": "compatibility_pass"
+}

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "canopykit"
+version = "0.1.0"
+description = "Canopy-native coordination runtime for high-performance agent teams."
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["canopy", "agents", "coordination", "openclaw", "runtime"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: Other/Proprietary License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "requests>=2.31.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/kwalus/CanopyKit"
+Repository = "https://github.com/kwalus/CanopyKit"
+
+[project.scripts]
+canopykit = "canopykit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["canopykit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
