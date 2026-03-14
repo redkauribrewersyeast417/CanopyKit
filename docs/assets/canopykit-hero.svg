@@ -37,7 +37,17 @@
   <g fill="#E9FDF1" font-family="Verdana, Arial, sans-serif">
     <text x="96" y="98" font-size="18" letter-spacing="2.6" fill="#79E2A7">CANOPY-NATIVE COORDINATION RUNTIME</text>
     <text x="96" y="164" font-size="72" font-weight="700">CanopyKit</text>
-    <text x="96" y="218" font-size="28" fill="#BAD8C7">Wake on real work. Route addressed tasks. Leave evidence.</text>
+    <text x="96" y="218" font-size="28" fill="#BAD8C7">Wake on work. Route tasks. Leave evidence.</text>
+  </g>
+
+  <g transform="translate(1080 66)">
+    <circle cx="58" cy="58" r="58" fill="#0D1D25" stroke="#2B5866" stroke-width="2"/>
+    <path d="M35 67C35 48.2 50.2 33 69 33H81C99.8 33 115 48.2 115 67C115 85.8 99.8 101 81 101H73L58 114V101H69C50.2 101 35 85.8 35 67Z" fill="#14313C"/>
+    <circle cx="58" cy="45" r="12" fill="#59DE89"/>
+    <circle cx="76" cy="34" r="11" fill="#59DE89"/>
+    <circle cx="94" cy="45" r="12" fill="#59DE89"/>
+    <path d="M49 67H101" stroke="#DDFCEC" stroke-width="6" stroke-linecap="round"/>
+    <path d="M49 81H89" stroke="#DDFCEC" stroke-width="6" stroke-linecap="round"/>
   </g>
 
   <g>
@@ -49,7 +59,7 @@
     <text x="126" y="426" font-family="Verdana, Arial, sans-serif" font-size="14" fill="#73D79C">ACTIONABLE CHANNEL ROUTING</text>
     <text x="126" y="458" font-family="Verdana, Arial, sans-serif" font-size="30" font-weight="700" fill="#F2FFF6">Addressed work only</text>
     <text x="126" y="530" font-family="Verdana, Arial, sans-serif" font-size="14" fill="#73D79C">OPERATOR-VISIBLE HEALTH</text>
-    <text x="126" y="562" font-family="Verdana, Arial, sans-serif" font-size="30" font-weight="700" fill="#F2FFF6">Mode, queue, evidence</text>
+    <text x="126" y="562" font-family="Verdana, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2FFF6">Mode, queue, evidence</text>
   </g>
 
   <g filter="url(#shadow)">
@@ -63,7 +73,7 @@
     <rect x="734" y="358" width="182" height="172" rx="18" fill="#0D1D25" stroke="#295767"/>
     <rect x="944" y="358" width="182" height="172" rx="18" fill="#0D1D25" stroke="#295767"/>
     <text x="762" y="287" font-family="Verdana, Arial, sans-serif" font-size="14" fill="#73D79C">CANOPY MESH</text>
-    <text x="762" y="320" font-family="Verdana, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2FFF6">Events, inbox, channels</text>
+    <text x="762" y="320" font-family="Verdana, Arial, sans-serif" font-size="26" font-weight="700" fill="#F2FFF6">Events, inbox, channels</text>
 
     <text x="758" y="392" font-family="Verdana, Arial, sans-serif" font-size="14" fill="#73D79C">RUN LOOP</text>
     <text x="758" y="426" font-family="Verdana, Arial, sans-serif" font-size="24" font-weight="700" fill="#F2FFF6">Daemon mode</text>
@@ -71,7 +81,7 @@
     <text x="758" y="484" font-family="Verdana, Arial, sans-serif" font-size="18" fill="#B4D0BF">no fake completion</text>
 
     <text x="968" y="392" font-family="Verdana, Arial, sans-serif" font-size="14" fill="#73D79C">OUTPUTS</text>
-    <text x="968" y="426" font-family="Verdana, Arial, sans-serif" font-size="24" font-weight="700" fill="#F2FFF6">Inspectable state</text>
+    <text x="968" y="426" font-family="Verdana, Arial, sans-serif" font-size="23" font-weight="700" fill="#F2FFF6">Inspectable state</text>
     <text x="968" y="456" font-family="Verdana, Arial, sans-serif" font-size="18" fill="#B4D0BF">run-status.json</text>
     <text x="968" y="484" font-family="Verdana, Arial, sans-serif" font-size="18" fill="#B4D0BF">actions.jsonl</text>
   </g>
