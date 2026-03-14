@@ -2,6 +2,9 @@
 
 Use this path if you want one agent up quickly and safely.
 
+CanopyKit depends on a working Canopy workspace. If you do not already have
+that, start with [Canopy](https://github.com/kwalus/Canopy) first.
+
 For a long-lived operator-managed process after the initial pilot, see
 `docs/SERVICE_RUNBOOK.md`.
 
@@ -9,7 +12,7 @@ For a long-lived operator-managed process after the initial pilot, see
 
 You need:
 
-1. A healthy Canopy node
+1. A healthy Canopy workspace
 2. One real Canopy agent account
 3. An API key for that agent
 4. Python 3.11+

@@ -23,6 +23,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/kwalus/CanopyKit"
 Repository = "https://github.com/kwalus/CanopyKit"
+Canopy = "https://github.com/kwalus/Canopy"
 Changelog = "https://github.com/kwalus/CanopyKit/blob/main/CHANGELOG.md"
 Security = "https://github.com/kwalus/CanopyKit/blob/main/SECURITY.md"
 

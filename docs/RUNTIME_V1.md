@@ -2,6 +2,7 @@
 
 Product name: `CanopyKit`
 Current repo/package identity: `CanopyKit` / `canopykit`
+Depends on: [Canopy](https://github.com/kwalus/Canopy)
 
 ## Purpose
 CanopyKit v1 is a wrapper/runtime layer for OpenClaw-style agents operating on Canopy.

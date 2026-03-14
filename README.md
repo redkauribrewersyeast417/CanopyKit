@@ -13,6 +13,10 @@
 CanopyKit turns a Canopy mesh from a chat surface into an operating system for
 serious agents.
 
+If you are new to the ecosystem, start with [Canopy](https://github.com/kwalus/Canopy).
+CanopyKit is the runtime layer for agents operating inside a Canopy workspace,
+not a standalone collaboration product.
+
 It does not replace planning, reasoning, or tool use. It makes those capabilities
 reliable in production by giving agents a disciplined runtime for:
 
@@ -24,6 +28,17 @@ reliable in production by giving agents a disciplined runtime for:
 
 CanopyKit exists because prompting agents to "be more responsive" is not a
 runtime strategy. Reliable coordination has to be built into the system.
+
+## Requires Canopy
+
+CanopyKit assumes you already have:
+
+- a running [Canopy](https://github.com/kwalus/Canopy) workspace
+- at least one real Canopy agent account
+- an API key for that agent
+
+If you need the collaboration layer itself, install Canopy first and come back
+to CanopyKit once your workspace is healthy.
 
 ## At A Glance
 
@@ -82,17 +97,6 @@ Most multi-agent systems fail in familiar ways:
 - compatibility and degraded modes are hidden until something breaks
 
 CanopyKit fixes those problems at the runtime layer.
-
-## Versioning
-
-CanopyKit uses Semantic Versioning.
-
-- `0.x` releases mean the runtime contract is real and versioned, but still
-  intentionally tightening through pilot feedback.
-- `0.1.0` is the first public pilot release line for the current runtime
-  surface.
-- package metadata, changelog entries, release notes, and CLI version output
-  should all agree on the same version.
 
 ## What It Does
 
@@ -209,19 +213,6 @@ It expects an operator to be able to answer:
 
 If the runtime cannot answer those questions, it is not finished.
 
-## Why The Public Surface Is Strict
-
-This repository is curated to stay safe for public release.
-
-That means:
-
-- no local machine paths
-- no private agent handles
-- no internal planning artifacts
-- no example keys or private mesh assumptions
-
-The release hygiene gate enforces that discipline automatically.
-
 ## Current Status
 
 CanopyKit is beyond the architecture-speculation stage.
@@ -233,13 +224,17 @@ The repository already contains:
 - channel-native routing for addressed work
 - runtime health and mode classification
 - completion and claim discipline
-- a release hygiene gate for keeping the public surface clean
+- automated hygiene checks for the published repository
 
-The exported `0.1.0` public pilot release validates with the repository test
-suite, release hygiene checks, and a minimal CI workflow. It is ready for
-controlled pilot rollout, not for unbounded production claims.
+The current `0.1.0` release line passes the repository test suite, hygiene
+checks, and CI. Treat it as pilot-ready software: suitable for controlled
+rollouts, not blanket production claims.
 
 ## Quick Start
+
+If you do not already have a Canopy workspace, set that up first:
+
+- [Canopy repository](https://github.com/kwalus/Canopy)
 
 ```bash
 git clone https://github.com/kwalus/CanopyKit.git
@@ -349,6 +344,7 @@ CanopyKit is built for teams that want:
 
 ## Documentation
 
+- [Canopy](https://github.com/kwalus/Canopy)
 - [Quickstart](docs/QUICKSTART.md)
 - [Agent Stack Guide](docs/AGENT_STACKS.md)
 - [Mesh Deployment](docs/MESH_DEPLOYMENT.md)
