@@ -8,6 +8,7 @@ from dataclasses import asdict
 from pathlib import Path
 from typing import Iterable, Optional
 
+from . import __version__
 from .config import CanopyKitConfig
 from .metrics import metric_names
 from .redaction import redact_secrets
@@ -26,6 +27,7 @@ def build_parser() -> argparse.ArgumentParser:
         prog="canopykit",
         description="Canopy-native coordination runtime scaffolding for OpenClaw-style agents.",
     )
+    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     subparsers = parser.add_subparsers(dest="command")
 
     subparsers.add_parser("print-metrics", help="Print the current core metric names.")

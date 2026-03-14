@@ -1,7 +1,7 @@
 # CanopyKit Runtime v1
 
 Product name: `CanopyKit`
-Current private repo/package identity: `CanopyKit` / `canopykit`
+Current repo/package identity: `CanopyKit` / `canopykit`
 
 ## Purpose
 CanopyKit v1 is a wrapper/runtime layer for OpenClaw-style agents operating on Canopy.

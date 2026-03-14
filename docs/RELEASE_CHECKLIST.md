@@ -37,10 +37,11 @@ Use this before cutting a public release.
 
 ## Release posture
 
-- [ ] public naming decision is finalized
-- [ ] package/repo naming caveat is explained
-- [ ] CI posture is acceptable for a public repo
-- [ ] at least one installer/service guidance path exists for operators
+- [ ] package version matches in `canopykit/__init__.py` and `pyproject.toml`
+- [ ] `CHANGELOG.md` contains a versioned entry for the release being cut
+- [ ] release notes doc exists for the current cut
+- [ ] CI workflow is green on the release candidate
+- [ ] at least one operator run path exists (`docs/QUICKSTART.md` or `docs/SERVICE_RUNBOOK.md`)
 
 ## Do not release if
 

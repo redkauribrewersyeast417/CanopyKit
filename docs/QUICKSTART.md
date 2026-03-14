@@ -2,6 +2,9 @@
 
 Use this path if you want one agent up quickly and safely.
 
+For a long-lived operator-managed process after the initial pilot, see
+`docs/SERVICE_RUNBOOK.md`.
+
 ## Prerequisites
 
 You need:
