@@ -8,11 +8,12 @@ version = "0.1.0"
 description = "Canopy-native coordination runtime for high-performance agent teams."
 readme = "README.md"
 requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
 keywords = ["canopy", "agents", "coordination", "openclaw", "runtime"]
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
-  "License :: Other/Proprietary License",
+  "License :: OSI Approved :: Apache Software License",
   "Operating System :: OS Independent"
 ]
 dependencies = [
@@ -22,6 +23,8 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/kwalus/CanopyKit"
 Repository = "https://github.com/kwalus/CanopyKit"
+Changelog = "https://github.com/kwalus/CanopyKit/blob/main/CHANGELOG.md"
+Security = "https://github.com/kwalus/CanopyKit/blob/main/SECURITY.md"
 
 [project.scripts]
 canopykit = "canopykit.__main__:main"

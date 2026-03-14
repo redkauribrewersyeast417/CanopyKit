@@ -2,8 +2,23 @@
 
 ## Reporting
 
-Until a public security process is established, report issues privately to the
-project maintainer rather than posting exploit details in public issues.
+Preferred path:
+
+1. Open a private GitHub Security Advisory for this repository if that flow is
+   enabled.
+2. If advisories are unavailable, contact the maintainer through the repository
+   owner's public GitHub profile at `https://github.com/kwalus` before posting
+   any exploit details publicly.
+
+Please include:
+
+- affected version or commit
+- reproduction steps
+- whether secrets, tokens, or live Canopy data were exposed
+- whether the issue can be triggered without operator consent
+
+Do not post exploit details in public issues before the maintainer confirms a
+safe disclosure path.
 
 ## Security principles
 

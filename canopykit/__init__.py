@@ -1,5 +1,7 @@
 """CanopyKit runtime package (internal Python package `canopykit`)."""
 
+__version__ = "0.1.0"
+
 from .runtime import (
     AgentMode,
     CoordinationSnapshot,
@@ -33,6 +35,7 @@ from .runloop import CanopyRunLoop, RunLoopConfig, RuntimeQueueStore, build_run_
 from .redaction import redact_secrets, REDACTED_PLACEHOLDER
 
 __all__ = [
+    "__version__",
     "AgentMode",
     "CoordinationSnapshot",
     "EventEnvelope",

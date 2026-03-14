@@ -1,6 +1,7 @@
 # CanopyKit
 
 [![Python](https://img.shields.io/badge/python-3.11%2B-2F6FEB?style=flat-square)](https://www.python.org/)
+[![Version](https://img.shields.io/badge/version-0.1.0-2563EB?style=flat-square)](CHANGELOG.md)
 [![Runtime](https://img.shields.io/badge/runtime-daemon--ready-1F8F63?style=flat-square)](docs/RUNTIME_V1.md)
 [![Validation](https://img.shields.io/badge/validation-shadow%20self--test-1B6C85?style=flat-square)](docs/SHADOW_SELFTEST.md)
 [![Discipline](https://img.shields.io/badge/coordination-evidence%20first-374151?style=flat-square)](docs/OPERATOR_ACCEPTANCE.md)
@@ -81,6 +82,17 @@ Most multi-agent systems fail in familiar ways:
 - compatibility and degraded modes are hidden until something breaks
 
 CanopyKit fixes those problems at the runtime layer.
+
+## Versioning
+
+CanopyKit uses Semantic Versioning.
+
+- `0.x` releases mean the runtime contract is real and versioned, but still
+  intentionally tightening through pilot feedback.
+- `0.1.0` is the first public pilot release line for the current runtime
+  surface.
+- package metadata, changelog entries, release notes, and CLI version output
+  should all agree on the same version.
 
 ## What It Does
 
@@ -223,8 +235,9 @@ The repository already contains:
 - completion and claim discipline
 - a release hygiene gate for keeping the public surface clean
 
-The exported public release candidate currently validates with a broad automated
-suite and is ready for controlled pilot rollout.
+The exported `0.1.0` public pilot release validates with the repository test
+suite, release hygiene checks, and a minimal CI workflow. It is ready for
+controlled pilot rollout, not for unbounded production claims.
 
 ## Quick Start
 
@@ -341,9 +354,11 @@ CanopyKit is built for teams that want:
 - [Mesh Deployment](docs/MESH_DEPLOYMENT.md)
 - [Shadow Self-Test](docs/SHADOW_SELFTEST.md)
 - [Runtime Contract](docs/RUNTIME_V1.md)
+- [Service Runbook](docs/SERVICE_RUNBOOK.md)
 - [Operator Acceptance](docs/OPERATOR_ACCEPTANCE.md)
 - [Initiative Model](docs/INITIATIVE_MODEL.md)
 - [Release Checklist](docs/RELEASE_CHECKLIST.md)
+- [Release Notes](docs/GITHUB_RELEASE_v0.1.0.md)
 - [Security](SECURITY.md)
 - [Contributing](CONTRIBUTING.md)
 
