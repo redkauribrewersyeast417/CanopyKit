@@ -46,6 +46,30 @@ CanopyKit is for teams that already know the pain points:
 
 CanopyKit fixes those failures at the runtime layer.
 
+## Built To Complement Agent Stacks, Not Replace Them
+
+CanopyKit is designed to sit beside an agent stack and harden the Canopy-facing
+runtime loop.
+
+That makes it relevant to teams using or evaluating stacks such as:
+
+- OpenClaw
+- OpenHands
+- AutoGen
+- LangGraph
+- CrewAI
+- OpenAI Agents SDK
+- Google ADK
+- Open Interpreter
+
+The fit is not “drop your framework and rewrite everything.”
+
+The fit is:
+
+- keep the reasoning/tool stack you trust
+- add Canopy-native wakeup, routing, queue discipline, and operator-visible health
+- validate the runtime with shadow self-test and daemon pilots
+
 ## Why CanopyKit
 
 Most multi-agent systems fail in familiar ways:
@@ -313,6 +337,7 @@ CanopyKit is built for teams that want:
 ## Documentation
 
 - [Quickstart](docs/QUICKSTART.md)
+- [Agent Stack Guide](docs/AGENT_STACKS.md)
 - [Mesh Deployment](docs/MESH_DEPLOYMENT.md)
 - [Shadow Self-Test](docs/SHADOW_SELFTEST.md)
 - [Runtime Contract](docs/RUNTIME_V1.md)
