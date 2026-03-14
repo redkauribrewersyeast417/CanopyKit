@@ -1,5 +1,12 @@
 # CanopyKit
 
+[![Python](https://img.shields.io/badge/python-3.11%2B-2F6FEB?style=flat-square)](https://www.python.org/)
+[![Runtime](https://img.shields.io/badge/runtime-daemon--ready-1F8F63?style=flat-square)](docs/RUNTIME_V1.md)
+[![Validation](https://img.shields.io/badge/validation-shadow%20self--test-1B6C85?style=flat-square)](docs/SHADOW_SELFTEST.md)
+[![Discipline](https://img.shields.io/badge/coordination-evidence%20first-374151?style=flat-square)](docs/OPERATOR_ACCEPTANCE.md)
+
+![CanopyKit hero](docs/assets/canopykit-hero.svg)
+
 **Canopy-native coordination runtime for high-performance agent teams.**
 
 CanopyKit turns a Canopy mesh from a chat surface into an operating system for
@@ -16,6 +23,28 @@ reliable in production by giving agents a disciplined runtime for:
 
 CanopyKit exists because prompting agents to "be more responsive" is not a
 runtime strategy. Reliable coordination has to be built into the system.
+
+## At A Glance
+
+| Surface | What it gives you |
+| --- | --- |
+| `shadow-selftest` | A canonical proof that an agent can authenticate, consume the feed, route channel work, and classify its runtime honestly |
+| `run` | A daemon-mode loop that consumes work continuously without pretending it completed something it did not |
+| Channel routing | Deterministic conversion of addressed channel activity into actionable work candidates |
+| Runtime status | Operator-visible `run-status.json`, `actions.jsonl`, mode classification, and degradation signals |
+| Safety model | Closed-world logic in code, judgment left to the model, and authorization never widened by subscriptions |
+
+## Why Teams Use It
+
+CanopyKit is for teams that already know the pain points:
+
+- agents wake too slowly or too noisily
+- channel chatter gets mistaken for assignments
+- inbox state drifts away from real completion
+- operators cannot explain whether an agent is healthy, blocked, or degraded
+- “initiative” is demanded socially instead of built operationally
+
+CanopyKit fixes those failures at the runtime layer.
 
 ## Why CanopyKit
 
@@ -49,6 +78,16 @@ It deliberately does **not** own:
 - synthesis
 - tool selection
 - open-ended judgment that still belongs to the model
+
+## Readiness Path
+
+```text
+1. Connect an agent to Canopy
+2. Run shadow-selftest until validation = full_pass
+3. Run a short daemon pilot and inspect status + actions
+4. Tighten any compatibility or operator gaps
+5. Roll out to longer pilots and then the wider mesh
+```
 
 ## Core Principles
 
@@ -90,6 +129,21 @@ flowchart LR
     I --> J
 ```
 
+## How The Runtime Moves
+
+```mermaid
+flowchart TD
+    A["Event feed poll"] --> B{"Relevant events?"}
+    B -- "no" --> C["Heartbeat fallback"]
+    B -- "yes" --> D["Inbox sync + channel routing"]
+    C --> D
+    D --> E["Claim / queue discipline"]
+    E --> F["Mode decision + metrics"]
+    F --> G["Write status and actions"]
+    G --> H{"Operator or model acts"}
+    H --> I["Evidence-bearing completion"]
+```
+
 ## Runtime Components
 
 | Component | Role |
@@ -118,6 +172,19 @@ It expects an operator to be able to answer:
 - Is it routing only the work it is supposed to handle?
 
 If the runtime cannot answer those questions, it is not finished.
+
+## Why The Public Surface Is Strict
+
+This repository is curated to stay safe for public release.
+
+That means:
+
+- no local machine paths
+- no private agent handles
+- no internal planning artifacts
+- no example keys or private mesh assumptions
+
+The release hygiene gate enforces that discipline automatically.
 
 ## Current Status
 
@@ -171,6 +238,13 @@ python -m canopykit run \
   --duration-seconds 180
 ```
 
+Expected artifacts from that pilot:
+
+- `run-status.json`
+- `actions.jsonl`
+- one mode decision you can explain
+- one actionable queue state you can inspect
+
 ## Validation Model
 
 CanopyKit uses explicit validation levels:
@@ -187,6 +261,16 @@ Meaning:
 
 This matters because a working fallback path is useful, but it is not the same
 thing as proving the intended operating surface.
+
+## Operator Outcome
+
+When CanopyKit is working properly, an operator should be able to say:
+
+- this agent is awake on the right work
+- this agent is not treating ambient chat as assignments
+- this agent is not silently clearing tasks
+- this agent is leaving evidence when it acts
+- this runtime is healthy enough to trust right now
 
 ## Channel-Native Coordination
 
