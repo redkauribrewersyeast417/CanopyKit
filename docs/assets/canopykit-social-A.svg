@@ -1,0 +1,67 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">CanopyKit - operational coordination runtime</title>
+  <desc id="desc">Control-plane shield over a disciplined routing layer, with a mesh background. Minimal headline for GitHub social preview.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1160" y2="640">
+      <stop stop-color="#08141B"/>
+      <stop offset="1" stop-color="#102631"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="820" y1="100" x2="1100" y2="360">
+      <stop stop-color="#59DE89"/>
+      <stop offset="1" stop-color="#1FA968"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#0B0F13" flood-opacity="0.7"/>
+    </filter>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0D1D25"/>
+      <stop offset="1" stop-color="#08141B"/>
+    </linearGradient>
+    <linearGradient id="shieldEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2B5866"/>
+      <stop offset="1" stop-color="#59DE89"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="48" y="56" width="1184" height="608" rx="30" stroke="#2B5866" fill="none" opacity="0.55"/>
+
+  <g opacity="0.18">
+    <path d="M150 160H1130" stroke="#2B5866" stroke-width="1"/>
+    <path d="M150 250H1130" stroke="#2B5866" stroke-width="1"/>
+    <path d="M150 340H1130" stroke="#2B5866" stroke-width="1"/>
+    <path d="M150 430H1130" stroke="#2B5866" stroke-width="1"/>
+    <path d="M150 520H1130" stroke="#2B5866" stroke-width="1"/>
+    <path d="M260 110V600" stroke="#2B5866" stroke-width="1"/>
+    <path d="M420 110V600" stroke="#2B5866" stroke-width="1"/>
+    <path d="M580 110V600" stroke="#2B5866" stroke-width="1"/>
+    <path d="M740 110V600" stroke="#2B5866" stroke-width="1"/>
+    <path d="M900 110V600" stroke="#2B5866" stroke-width="1"/>
+    <path d="M1060 110V600" stroke="#2B5866" stroke-width="1"/>
+  </g>
+
+  <text x="140" y="230" fill="#DDFCEC" font-family="Inter, SF Pro Display, Segoe UI, Roboto, Arial, sans-serif" font-size="60" font-weight="800">
+    CanopyKit
+  </text>
+
+  <text x="140" y="290" fill="#DDFCEC" opacity="0.86"
+        font-family="Inter, SF Pro Display, Segoe UI, Roboto, Arial, sans-serif" font-size="26" font-weight="500">
+    runtime shell for Canopy agent teams
+  </text>
+
+  <g transform="translate(880 210) scale(1)" filter="url(#softShadow)">
+    <path d="M155 20 L255 60 L255 170 C255 245 190 295 155 310 C120 295 55 245 55 170 L55 60 Z"
+          fill="url(#shield)" stroke="url(#shieldEdge)" stroke-width="6" />
+    <rect x="80" y="90" width="150" height="12" rx="6" fill="#DDFCEC" opacity="0.85"/>
+    <rect x="80" y="120" width="120" height="12" rx="6" fill="#DDFCEC" opacity="0.85"/>
+    <rect x="80" y="150" width="90"  height="12" rx="6" fill="#DDFCEC" opacity="0.85"/>
+    <circle cx="155" cy="70" r="26" fill="url(#accent)"/>
+    <circle cx="155" cy="70" r="34" fill="none" stroke="#59DE89" stroke-width="4" opacity="0.8"/>
+  </g>
+
+  <text x="140" y="520" fill="#DDFCEC" opacity="0.72"
+        font-family="Inter, SF Pro Display, Segoe UI, Roboto, Arial, sans-serif" font-size="20" font-weight="500">
+    addressed work, queueing, evidence
+  </text>
+</svg>

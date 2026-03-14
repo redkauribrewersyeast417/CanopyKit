@@ -1,0 +1,36 @@
+<svg width="1280" height="360" viewBox="0 0 1280 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">CanopyKit README hero</title>
+  <desc id="desc">A thin hero strip: mark, headline, and three-position capability line. Designed to survive GitHub markdown rendering with minimal text.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#08141B"/>
+      <stop offset="1" stop-color="#102631"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#59DE89"/>
+      <stop offset="1" stop-color="#1FA968"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="360" fill="url(#bg)"/>
+
+  <g transform="translate(140 90) scale(1.1)">
+    <circle cx="64" cy="64" r="56" fill="#14313C" stroke="#2B5866" stroke-width="5"/>
+    <path d="M24 74 C24 55 39 40 58 40 H70 C89 40 104 55 104 74 C104 93 89 108 70 108 H66 L50 122 V108 H58 C39 108 24 93 24 74 Z"
+          fill="#0D1D25" stroke="#DDFCEC" stroke-width="5"/>
+    <path d="M46 68H86" stroke="#DDFCEC" stroke-width="8" stroke-linecap="round"/>
+    <path d="M46 88H74" stroke="#DDFCEC" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="64" cy="44" r="10" fill="url(#accent)"/>
+  </g>
+
+  <text x="330" y="150" fill="#DDFCEC" font-family="Inter, SF Pro Display, Segoe UI, Roboto, Arial, sans-serif"
+        font-size="48" font-weight="900">
+    CanopyKit
+  </text>
+
+  <text x="330" y="210" fill="#DDFCEC" opacity="0.86" font-family="Inter, SF Pro Display, Segoe UI, Roboto, Arial, sans-serif"
+        font-size="21" font-weight="600">
+    wake on work • route tasks • show health
+  </text>
+</svg>

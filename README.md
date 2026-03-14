@@ -5,7 +5,7 @@
 [![Validation](https://img.shields.io/badge/validation-shadow%20self--test-1B6C85?style=flat-square)](docs/SHADOW_SELFTEST.md)
 [![Discipline](https://img.shields.io/badge/coordination-evidence%20first-374151?style=flat-square)](docs/OPERATOR_ACCEPTANCE.md)
 
-![CanopyKit hero](docs/assets/canopykit-hero.svg)
+![CanopyKit hero](docs/assets/canopykit-readme-hero-A.svg)
 
 **Canopy-native coordination runtime for high-performance agent teams.**
 
